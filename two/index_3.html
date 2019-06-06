@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <title></title>
+
+        <style>
+            #text {  
+                width: 100%;
+                font-size: 16px;
+                padding: 12px 20px 12px 40px;
+                margin-bottom: 12px;
+            }
+            table {
+                border-collapse: collapse;
+                border: 2px solid black;
+                width: 100%;
+            }            
+
+            th{
+                /* text-align:left ; */
+                border: 2px solid black;
+                background-color: greenyellow ;
+                height: 50px;
+                text-align: center;
+            }
+            
+            td{
+                text-align: center;
+                border: 2px solid black;
+                vertical-align: bottom;
+                padding: 15px;
+            }
+            td:hover {
+                background-color: #ffe600;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script>
+        $(function(){
+            $("#text").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#table tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+        </script>
+    </head>
+    <body>
+        
+            <input type="text" id="text" onkeyup="f()" placeholder="Search by Alphabet or numarical" title="Type in a Alphabet or numarical">
+        </form>
+        <table id="table">
+            <tr>
+                <th>
+                    Nunerical
+                </th>
+                <th>
+                    Alphabat
+                </th>
+                <th>
+                    Roman
+                </th>
+
+            </tr>
+            <tr>
+                <td>
+                    one
+                </td>
+                <td>
+                    Apple
+                </td>
+                <td>
+                    I
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    two
+                </td>
+                <td>
+                    Banana
+                </td>
+                <td>
+                    II                     
+                </td>
+            </tr>
+            <tr>
+                    <td>
+                        three
+                    </td>
+                    <td>
+                        Cat
+                    </td>
+                    <td>
+                        III                     
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        four
+                    </td>
+                    <td>
+                        Dog
+                    </td>
+                    <td>
+                        IV                     
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        four
+                    </td>
+                    <td>
+                        Dog
+                    </td>
+                    <td>
+                        IV                     
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        five
+                    </td>
+                    <td>
+                        Elephant
+                    </td>
+                    <td>
+                        V                     
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        six
+                    </td>
+                    <td>
+                        Fish
+                    </td>
+                    <td>
+                        VI                     
+                    </td>
+            </tr>
+
+        </table>
+    </body>
+</html>

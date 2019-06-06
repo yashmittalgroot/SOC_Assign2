@@ -1,0 +1,113 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>
+                    Marvel
+            </title>
+            <style>
+                
+            </style>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+            <script>
+            // window.open("https://www.google.com","SubWindow",width=200,height=100
+            var x=1;
+            function f1(){
+                // var textw = document.getElementById("width").value;
+                // var texth = document.getElementById("height").value;
+                var img1=document.getElementById("1");
+                var img2=document.getElementById("2");
+                var img3=document.getElementById("3");
+                // iframe.setAttribute("width",textw+"px");
+                // iframe.setAttribute("height",texth+"px");
+                if(x%3==0){
+                    x++;
+                    img1.setAttribute("src","1.jpeg");
+                    img2.setAttribute("src","2.jpeg");
+                    img3.setAttribute("src","3.jpeg");
+                    
+                }
+                else if(x%3==1 ){
+                    x++;
+                    img1.setAttribute("src","4.jpeg");
+                    img2.setAttribute("src","5.jpeg");
+                    img3.setAttribute("src","6.jpeg");
+                    
+                    
+                }
+                else{
+                    x++;
+                    img1.setAttribute("src","7.jpeg");
+                    img2.setAttribute("src","8.jpeg");
+                    img3.setAttribute("src","9.jpeg");                  
+                    
+                }
+            }
+            function f2(){
+                // var textw = document.getElementById("width").value;
+                // var texth = document.getElementById("height").value;
+                var img1=document.getElementById("1");
+                var img2=document.getElementById("2");
+                var img3=document.getElementById("3");
+                x++;
+                // img.setAttribute("width",textw+"px");
+                // img.setAttribute("height",texth+"px");
+                if(x%3==0){
+                    x++;
+                    img1.setAttribute("src","1.jpeg");
+                    img2.setAttribute("src","2.jpeg");
+                    img3.setAttribute("src","3.jpeg");
+                    
+                }
+                else if(x%3==1 ){
+                    x++;
+                    img1.setAttribute("src","4.jpeg");
+                    img2.setAttribute("src","5.jpeg");
+                    img3.setAttribute("src","6.jpeg");
+                    
+                    
+                }
+                else{
+                    x++;
+                    img1.setAttribute("src","7.jpeg");
+                    img2.setAttribute("src","8.jpeg");
+                    img3.setAttribute("src","9.jpeg"); 
+                }
+            }
+        //src="http://www.wikipedia.org/"
+        
+        
+        </script>
+        </head>
+        <body>
+                
+            <form class="jumbotron"  style="vertical-align: middle ">
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="button" value="<" style="padding: 115px 1px" onclick="f2()">    
+                <img id="1" src="1.jpeg" width="500" height='255'  ></img>                
+                <img id="2" src="2.jpeg" width="500" height='255'  ></img>
+                <img id="3" src="3.jpeg" width="500" height='255'  ></img>
+                <!-- <img id="4" src="4.jpeg" width="500" height='255'  ></img>
+                <img id="5" src="5.jpeg" width="500" height='255'  ></img>
+                <img id="6" src="6.jpeg" width="500" height='255'  ></img>
+                <img id="7" src="7.jpeg" width="500" height='255'  ></img>
+                <img id="8" src="8.jpeg" width="500" height='255'  ></img>
+                <img id="9" src="9.jpeg" width="500" height='255'  ></img> -->
+                <input type="button" value=">" style="padding: 115px 1px" onclick="f1()" >
+                    <!-- <img id="img2" src="timeemoji.jpg" width="250" height='255' style="float: right" ></iframe>         -->
+            </form>
+            
+            
+        </body>
+        </html>
